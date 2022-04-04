@@ -28,7 +28,6 @@ class Test_button(Button):
 
 # update is run every frame
 def update():
-	#print('test')
 	if held_keys['a']:
 		cube.x -= 1 * time.dt
 
@@ -39,12 +38,7 @@ app = Ursina(vsync = True)
 sans_image = load_texture('assets/Character.png')
 cube = Entity(model='quad', texture = sans_image, color=color.orange, scale = (2,5), position = (5,1))
 
-# quad with texture
-#sans_image = load_texture('assets/Character.png')
-#sans = Entity(model = 'quad', texture = sans_image)
-#sans = Entity(model = 'quad', texture = 'Sans.png')
-
-# creating a block properly
+# Create Cube
 test = Test_cube()
 
 # creating a button
